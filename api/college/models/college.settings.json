@@ -1,0 +1,52 @@
+{
+  "connection": "default",
+  "collectionName": "colleges",
+  "info": {
+    "name": "college"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "rank": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "fee": {
+      "type": "biginteger"
+    },
+    "lab_facility": {
+      "type": "integer"
+    },
+    "teach_env": {
+      "type": "integer"
+    },
+    "quality": {
+      "type": "integer"
+    },
+    "sat": {
+      "type": "integer"
+    },
+    "courses": {
+      "collection": "course"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "financialaid": {
+      "type": "boolean"
+    }
+  }
+}

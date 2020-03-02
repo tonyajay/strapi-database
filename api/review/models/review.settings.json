@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "reviews",
+  "info": {
+    "name": "review"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "review": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "courses",
+  "info": {
+    "name": "course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "course_name": {
+      "type": "string"
+    },
+    "course_major": {
+      "type": "string"
+    }
+  }
+}
